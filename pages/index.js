@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Feed from "../components/Feed.js";
 import Header from "../components/Header.js";
 
 export default function Home() {
@@ -12,9 +13,8 @@ export default function Home() {
       {/* Header */}
       <Header />
       {/* Feed */}
-
+      <Feed />
       {/*Modal*/}
-      <h1>Instagram</h1>
     </div>
   );
 }
