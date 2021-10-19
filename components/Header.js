@@ -11,7 +11,7 @@ import {HomeIcon} from '@heroicons/react/solid';
 
 function Header() {
   return (
-    <div>
+    <div className="shadow-sm border-b bg-white sticky top-0 z-50">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         {/* left */}
         <div className="relative hidden lg:inline-grid  w-24 cursor-pointer">
@@ -49,7 +49,19 @@ function Header() {
         <HomeIcon className="navBtn"/>
         <MenuIcon className="h-6 md:hidden cursor-pointer"/>
 
-        <PaperAirplaneIcon className="navBtn"/>
+        <div className="relative navBtn">
+        <PaperAirplaneIcon className="navBtn rotate-45"/>
+        <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full
+        flex items-center justify-center animate-pulse text-white">3</div>
+        </div>
+
+
+        <PlusCircleIcon  className="navBtn"/>
+        <UserGroupIcon className="navBtn"/>
+        <HeartIcon className="navBtn" />
+        <img src="https://scontent.fsof5-1.fna.fbcdn.net/v/t1.6435-9/39064426_1973644069417349_2756720232042070016_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=65WGwHaL2psAX_O1oFf&_nc_ht=scontent.fsof5-1.fna&oh=880cf2709cdd5fb19f906e96707483d8&oe=6194072F" 
+        alt="profile pic" 
+        className="h-10 rounded-full cursor-pointer"/>
         </div>
 
 
