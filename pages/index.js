@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Feed from "../components/Feed.js";
 import Header from "../components/Header.js";
+import Modal from "../components/Modal.js";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* Feed */}
       <Feed />
       {/*Modal*/}
+      <Modal />
     </div>
   );
 }
