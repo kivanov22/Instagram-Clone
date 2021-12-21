@@ -7,12 +7,12 @@ function signin({ providers }) {
     <>
       <Header />
 
-      <div
-        className="flex flex-col items-center justify-center min-h-screen
-     py-2 -mt-56 px-14 text-center"
+      <div className="flex flex-col items-center justify-center min-h-screen
+     py-2 -mb-56 px-14 text-center"
       >
         <img className="w-80" src="https://links.papareact.com/ocw" alt="" />
-        <p className="font-xs italic">This is a nice looking login page !</p>
+        <p className="font-xs italic">This is a nice looking login page!
+        </p>
 
         <div className="mt-40">
           {Object.values(providers).map((provider) => (
